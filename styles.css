@@ -1,13 +1,14 @@
 @page {
 	size: 7in 9.25in;
 	margin: 27mm 16mm 27mm 16mm;
+	/* max-height: 297mm; */
+	/* max-width: 210mm; */
 	height: 297mm;
 	width: 210mm;
 }
-h1 {
-	font-size: 20px;
-	font-weight: bold;
-	text-align: center;
+body{
+	height: 297mm;
+	width: 210mm;
 }
 .flex{
 	display:flex;
@@ -56,13 +57,13 @@ h1 {
 	width:90%;
 }
 .w-100{
-	/* width:100%; */
+	width:100%;
 }
 .text-center{
 	text-align:center;
 }
 .container{
-	/* padding: 2mm; */
+	padding: 2mm;
 }
 .space-between{
 	justify-content:space-between;
@@ -71,8 +72,8 @@ h1 {
 	border: 1px solid black;
 }
 .gray-block{
-	width: 1cm;
-	height: 5mm;
+	width: 8mm;
+	height: 4mm;
 	background-color: lightgray;
 }
 .min-content{
@@ -82,27 +83,30 @@ html{
 	font-family: Poppins;
 }
 .super-container{
-	width: 170mm;
+	width: 200mm;
 	font-size: 12px;
-	margin: 27mm 16mm 27mm 16mm;
+	/* margin: 27mm 16mm 27mm 16mm; */
 	/* justify-content: space-between; */
-	height: 297mm;
+	height: 270mm;
+	box-sizing: border-box;
 }
 span{
 	padding: 0 .5em
 }
 .logo{
-	right:0;
-	/* width: 100px; */
-	/* height: 150px; */
-	/* position: absolute; */
+	margin-top: -25px;
 }
 /* .relative{ */
 /* 	position: relative; */
 /* } */
+p-relative{
+	position: relative;
+}
 h1{
 		font-size:31px;
-		margin: 45px 0
+		margin: 10px 0 55px 100px;
+		font-weight: bold;
+		text-align: center;
 }
 .text-sm{
 		font-size:9px;
@@ -110,9 +114,10 @@ h1{
 }
 .name-group{
 		margin-bottom: 3mm;
+		margin-left: 22%;
 }
 .box-container{
-		padding: 1mm;
+		padding: 0 1mm 1mm 1mm;
 
 }
 .mb-50{
