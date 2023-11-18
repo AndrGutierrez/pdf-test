@@ -1,3 +1,4 @@
 venv
 output.pdf
-assets/*
+assets/images/*
+assets/fonts/*
