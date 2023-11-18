@@ -1,6 +1,4 @@
-from urllib import request
-from weasyprint import HTML, CSS
+from weasyprint import HTML
 
-html = HTML(filename="./test.html", base_url="./")
-css= CSS(filename="./styles.css")
-html.write_pdf('output.pdf', css=css)
+html = HTML(filename="./index.html", base_url="./")
+html.write_pdf('output.pdf')
