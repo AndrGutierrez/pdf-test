@@ -247,7 +247,7 @@ h1{
 }
 .entry, .entry-child{
   margin-bottom: 10px;
-  justify-content: center;
+  justify-content: space-between;
 }
 .mt-gb{
   margin-top: 10px
@@ -262,6 +262,7 @@ h1{
   /* max-width: fit-content; */
   /* letter-spacing: 5px; */
   min-width: 0px;
+  /* max-width:  */
 }
 
 .dots:after {
