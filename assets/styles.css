@@ -1,4 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@font-face {
+    font-family: 'Berlin'; /*a name to be used later*/
+    src: url('./fonts/Wir.Berlin Schrift/Office (TTF)/BerlinTypeOffice-Regular.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'BerlinBold'; /*a name to be used later*/
+    src: url('./fonts/Wir.Berlin Schrift/Office (TTF)/BerlinTypeOffice-Regular.ttf'); /*URL to font*/
+    src: url('./fonts/Wir.Berlin Schrift/Office (TTF)/BerlinTypeOffice-Bold.ttf'); /*URL to font*/
+}
 @page {
 	/* size: 7in 9.25in; */
 	margin: 2.5cm 2.2cm 2.5cm 2.2cm;
@@ -20,10 +29,10 @@
 	justify-content:center;
 }
 .justify-evenly{
-	justify-content:space-evenly;
+	justify-content: space-evenly;
 }
 .underline{
-	border-bottom: black 0.8px solid;
+	border-bottom: black 0.5px solid;
 	margin-bottom: 2px;
 }
 .w-10{
@@ -57,6 +66,9 @@
 	width:40%;
 }
 .w-45{
+	width:45%;
+}
+.w-49{
 	width:49%;
 }
 .w-50{
@@ -83,6 +95,11 @@
 .w-100{
 	width:100%;
 }
+.max-w-100{
+	max-width:100%;
+}
+
+
 .text-center{
 	text-align:center;
 }
@@ -94,15 +111,16 @@
 	margin-left: -5px;
 }
 .space-between{
-	justify-content:space-between;
+	justify-content: space-between;
 }
 .border{
 	border: 1px solid black;
 }
 .gray-block{
-	width: 8mm;
+	min-width: 8mm;
 	height: 5mm;
 	background-color: lightgray;
+  text-align: center;
 }
 body{
 	margin: 0;
@@ -111,7 +129,7 @@ body{
 	/* height: min-content */
 }
 html{
-	font-family: Poppins;
+	font-family: Berlin;
 	height: 247mm;
 }
 .super-container{
@@ -130,8 +148,12 @@ span{
 h1{
 		font-size: 31px;
 		margin: 20px 0 55px 60px;
-		font-weight: 500 !important;
+		/* font-weight: 500 !important; */
 		text-align: center;
+}
+.bold{
+    font-family: BerlinBold;
+
 }
 .text-sm{
 		font-size: 8px;
@@ -190,5 +212,48 @@ h1{
 
 .berlin{
 	margin-top: 30px;
+}
+
+
+.left{
+  min-width: fit-content;
+  text-wrap: nowrap;
+}
+
+.entry-child{
+  padding: 0 2rem;
+}
+.entry, .entry-child{
+  margin-bottom: 10px;
+}
+.mt-gb{
+  margin-top: 10px
+
+}
+
+
+.dots {
+  height: 1rem; 
+  overflow: hidden; 
+  word-wrap: break-word;   
+  /* letter-spacing: 5px; */
+}
+
+.dots:after {
+  content: '................................................................................................................';
+  width: 100%;
+  display: block;
+}
+
+.lines {
+  height: 1rem; 
+  overflow: hidden; 
+  word-wrap: break-word; 
+}
+
+.lines:after {
+  content: '-------------------------------------------------------------------------------------------------------------';
+  width: 100%;
+  display: block;
 }
 

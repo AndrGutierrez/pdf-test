@@ -4,16 +4,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-		<!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-		<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-		<!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet"> -->
 		<link href="./assets/styles.css" rel="stylesheet" type="text/css" />
 </head>
 <body class="w-100">
 	<div class="super-container flex flex-column space-between">
 		<div class="container">
 			<div class="flex w-100 header-container">
-				<h1 class="w-100">ZEUGNIS</h1>
+				<h1 class="w-100 bold">ZEUGNIS</h1>
 				<img src="./assets/images/drawing.svg" class="logo">
 			</div>
 			<div class="name-group w-100">
@@ -29,13 +26,13 @@
 					<span>
 						geboren am
 					</span>
-					 <div class="underline w-100 h-100"></div>
+					 <div class="underline w-100 h-100">{{ pupil.birthday|date:"d.m.Y" }}</div>
 				</div>
 				<div class="flex min-content klasse ">
 					<span>
 						Klasse 
 					</span>
-					<div class="underline h-100 w-70"></div>
+					<div class="underline h-100 w-70">{{ pupil.group }}</div>
 				</div>
 				<div class="flex im min-content">
 					<div class="w-10 underline h-100"></div>
@@ -47,10 +44,98 @@
 			</div>
 		</div>
 
+    <div class="container">
+        <div class="underline w-100"></div>
+
+        <div class="bold">Leistungen</div>
+        <div class="max-w-100 flex space-between">
+
+          <div class="w-45">
+            <div class="entry flex w-100">
+              <div class="left">Deustch </div>
+              <div class="dots"></div>
+              <div class="right gray-block"></div>
+            </div>
+
+            <div>
+              <div class="entry-child flex max-w-100 ">
+                <span class="left">Sprechen und Zuhören </span>
+                <div class="dots"></div>
+                <div class="right gray-block"></div>
+              </div>
+              <div class="entry-child flex max-w-100">
+                <span class="left">Schreiben ‒ Texte verfassen </span>
+                <div class="dots"></div>
+                <div class="right gray-block"></div>
+              </div>
+              <div class="entry-child flex max-w-100">
+                <span class="left">Schreiben ‒ Rechtschreiben </span>
+                <div class="dots"></div>
+                <div class="right gray-block"></div>
+              </div>
+              <div class="entry-child flex max-w-100">
+                <span class="left">Sprachwissen ‒ Sprachbewusstheit </span>
+                <div class="dots"></div>
+                <div class="right gray-block"></div>
+              </div>
+              <div class="entry-child flex max-w-100">
+                <span class="left">Lesen ‒ Mit Texten und Medien umgehen </span>
+                <div class="dots"></div>
+                <div class="right gray-block"></div>
+              </div>
+            </div>
+
+            <div class="entry flex w-100">
+              <div class="left">Fremdsprache </div>
+              <div class="lines"></div>
+              <div class="right gray-block"></div>
+            </div>
+          </div>
+          <div class="w-45">
+              <div class="entry flex max-w-100">
+                <span class="left">Mathematik </span>
+                <div class="dots"></div>
+                <div class="right gray-block"></div>
+              </div>
+              <div class="entry flex max-w-100">
+                <span class="left">Sachunterricht </span>
+                <div class="dots"></div>
+                <div class="right gray-block"></div>
+              </div>
+              <div class="entry flex max-w-100">
+                <span class="left">Kunst </span>
+                <div class="dots"></div>
+                <div class="right gray-block"></div>
+              </div>
+              <div class="entry flex max-w-100">
+                <span class="left">Musik </span>
+                <div class="dots"></div>
+                <div class="right gray-block"></div>
+              </div>
+              <div class="entry flex max-w-100">
+                <span class="left">Sport </span>
+                <div class="dots"></div>
+                <div class="right gray-block"></div>
+              </div>
+              <div class="entry flex w-100">
+                <div class="left"> </div>
+                <div class="lines"></div>
+                <div class="right gray-block">--</div>
+              </div>
+              <div class="entry flex w-100">
+                <div class="left"> </div>
+                <div class="lines"></div>
+                <div class="right gray-block">--</div>
+              </div>
+          </div>
+        </div>
+
+        <div class="underline w-100"></div>
+    </div>
 		<div class="container">
 			<div class="flex space-between mb-50 boxes-container">
 				<div class="w-37 border box-container flex justify-evenly">
-					<div class="w-45">
+					<div class="w-49">
 						<div class="w-100 flex justify-center">
 							<div class="text-sm w-100 text-center">
 								versäumte Tage
@@ -60,7 +145,7 @@
 							<div class="gray-block"></div>
 						</div>
 					</div>
-					<div class="w-45">
+					<div class="w-49">
 						<div class="w-100 flex justify-center">
 							<div class="text-sm">
 								davon unentschuldigt
