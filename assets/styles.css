@@ -10,8 +10,9 @@
 }
 @page {
 	/* size: 7in 9.25in; */
-	margin: 2.5cm 2.2cm 2.5cm 2.2cm;
-	box-sizing: b4rder-box;
+	/* margin: 2.5cm 2.2cm 2.5cm 2.2cm; */
+	margin: 2.5cm 2.2cm 30px 2.2cm;
+	box-sizing: border-box;
 	max-height: 247mm;
 	min-height: 247mm;
 	max-width: 210mm;
@@ -34,6 +35,9 @@
 .underline{
 	border-bottom: black 0.5px solid;
 	margin-bottom: 2px;
+}
+.p-0{
+  padding: 0;
 }
 .w-10{
 	width:10%;
@@ -96,9 +100,12 @@
 	width:100%;
 }
 .max-w-100{
-	max-width:100%;
+	max-width: 100%;
 }
 
+.min-w-100{
+	min-width: 100%;
+}
 
 .text-center{
 	text-align:center;
@@ -122,6 +129,12 @@
 	background-color: lightgray;
   text-align: center;
 }
+.gray-checkbox{
+	min-width: 3mm;
+	height: 3mm;
+	background-color: lightgray;
+  text-align: center;
+}
 body{
 	margin: 0;
 }
@@ -134,7 +147,7 @@ html{
 }
 .super-container{
 	height: 247mm;
-	font-size: 11px;
+	font-size: 12px;
 	box-sizing: border-box;
 }
 span{
@@ -156,7 +169,7 @@ h1{
 
 }
 .text-sm{
-		font-size: 8px;
+		font-size: 9px;
 
 }
 .name-group{
@@ -191,12 +204,13 @@ h1{
 		margin-left: 2px;
 		height: 1.5em;
 }
+
 .h-100{
 		height: 100%;
 }
-.boxes-container{
-		margin-top: -235px;
-}
+/* .boxes-container{ */
+/* 		margin-top: -235px; */
+/* } */
 .geboren{
 		width: 190px;
 }
@@ -216,15 +230,21 @@ h1{
 
 
 .left{
-  min-width: fit-content;
-  text-wrap: nowrap;
+  /* min-width: fit-content; */
+  /* max-width: fit-content; */
+  /* text-wrap: nowrap; */
 }
 
+.child-container{
+  box-sizing: border-box;
+}
 .entry-child{
-  padding: 0 2rem;
+  /* padding: 0 8mm 0 0.8rem; */
+  box-sizing: border-box;
 }
 .entry, .entry-child{
   margin-bottom: 10px;
+  justify-content: center;
 }
 .mt-gb{
   margin-top: 10px
@@ -236,12 +256,12 @@ h1{
   height: 1rem; 
   overflow: hidden; 
   word-wrap: break-word;   
+  /* max-width: fit-content; */
   /* letter-spacing: 5px; */
 }
 
 .dots:after {
-  content: '................................................................................................................';
-  width: 100%;
+  content: '...............................................................................................................................................';
   display: block;
 }
 
@@ -255,5 +275,9 @@ h1{
   content: '-------------------------------------------------------------------------------------------------------------';
   width: 100%;
   display: block;
+}
+.border-box{
+  box-sizing: border-box;
+  overflow: hidden;
 }
 

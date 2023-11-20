@@ -8,130 +8,169 @@
 </head>
 <body class="w-100">
 	<div class="super-container flex flex-column space-between">
-		<div class="container">
-			<div class="flex w-100 header-container">
-				<h1 class="w-100 bold">ZEUGNIS</h1>
-				<img src="./assets/images/drawing.svg" class="logo">
-			</div>
-			<div class="name-group w-100">
-				<div class="flex justify-center w-100">
-					<div class="underline w-55"></div>
-				</div>
-				<div class="flex justify-center w-100">
-					<div class="text-sm text-center w-60">Vorname/n &nbsp; Name</div>
-				</div>
-			</div>
-			<div class="w-100 flex space-between date-group">
-				<div class="flex geboren">
-					<span>
-						geboren am
-					</span>
-					 <div class="underline w-100 h-100">{{ pupil.birthday|date:"d.m.Y" }}</div>
-				</div>
-				<div class="flex min-content klasse ">
-					<span>
-						Klasse 
-					</span>
-					<div class="underline h-100 w-70">{{ pupil.group }}</div>
-				</div>
-				<div class="flex im min-content">
-					<div class="w-10 underline h-100"></div>
-					<span>
-						Halbjahr im Schuljahr
-					</span>
-					<div class="underline w-13"></div> <div>/</div> <div class="underline h-100 w-13"></div>
-				</div>
-			</div>
-		</div>
-
-    <div class="container">
-        <div class="underline w-100"></div>
-
-        <div class="bold">Leistungen</div>
-        <div class="max-w-100 flex space-between">
-
-          <div class="w-45">
-            <div class="entry flex w-100">
-              <div class="left">Deustch </div>
-              <div class="dots"></div>
-              <div class="right gray-block"></div>
-            </div>
-
-            <div>
-              <div class="entry-child flex max-w-100 ">
-                <span class="left">Sprechen und Zuhören </span>
-                <div class="dots"></div>
-                <div class="right gray-block"></div>
-              </div>
-              <div class="entry-child flex max-w-100">
-                <span class="left">Schreiben ‒ Texte verfassen </span>
-                <div class="dots"></div>
-                <div class="right gray-block"></div>
-              </div>
-              <div class="entry-child flex max-w-100">
-                <span class="left">Schreiben ‒ Rechtschreiben </span>
-                <div class="dots"></div>
-                <div class="right gray-block"></div>
-              </div>
-              <div class="entry-child flex max-w-100">
-                <span class="left">Sprachwissen ‒ Sprachbewusstheit </span>
-                <div class="dots"></div>
-                <div class="right gray-block"></div>
-              </div>
-              <div class="entry-child flex max-w-100">
-                <span class="left">Lesen ‒ Mit Texten und Medien umgehen </span>
-                <div class="dots"></div>
-                <div class="right gray-block"></div>
-              </div>
-            </div>
-
-            <div class="entry flex w-100">
-              <div class="left">Fremdsprache </div>
-              <div class="lines"></div>
-              <div class="right gray-block"></div>
-            </div>
+    <div class="">
+      <div class="container mb-50">
+        <div class="flex w-100 header-container">
+          <h1 class="w-100 bold">ZEUGNIS</h1>
+          <img src="./assets/images/drawing.svg" class="logo">
+        </div>
+        <div class="name-group w-100">
+          <div class="flex justify-center w-100">
+            <div class="underline w-55"></div>
           </div>
-          <div class="w-45">
-              <div class="entry flex max-w-100">
-                <span class="left">Mathematik </span>
-                <div class="dots"></div>
-                <div class="right gray-block"></div>
-              </div>
-              <div class="entry flex max-w-100">
-                <span class="left">Sachunterricht </span>
-                <div class="dots"></div>
-                <div class="right gray-block"></div>
-              </div>
-              <div class="entry flex max-w-100">
-                <span class="left">Kunst </span>
-                <div class="dots"></div>
-                <div class="right gray-block"></div>
-              </div>
-              <div class="entry flex max-w-100">
-                <span class="left">Musik </span>
-                <div class="dots"></div>
-                <div class="right gray-block"></div>
-              </div>
-              <div class="entry flex max-w-100">
-                <span class="left">Sport </span>
-                <div class="dots"></div>
-                <div class="right gray-block"></div>
-              </div>
-              <div class="entry flex w-100">
-                <div class="left"> </div>
-                <div class="lines"></div>
-                <div class="right gray-block">--</div>
-              </div>
-              <div class="entry flex w-100">
-                <div class="left"> </div>
-                <div class="lines"></div>
-                <div class="right gray-block">--</div>
-              </div>
+          <div class="flex justify-center w-100">
+            <div class="text-sm text-center w-60">Vorname/n &nbsp; Name</div>
           </div>
         </div>
+        <div class="w-100 flex space-between date-group">
+          <div class="flex geboren">
+            <span>
+              geboren am
+            </span>
+             <div class="underline w-100 h-100">{{ pupil.birthday|date:"d.m.Y" }}</div>
+          </div>
+          <div class="flex min-content klasse ">
+            <span>
+              Klasse 
+            </span>
+            <div class="underline h-100 w-70">{{ pupil.group }}</div>
+          </div>
+          <div class="flex im min-content">
+            <div class="w-10 underline h-100"></div>
+            <span>
+              Halbjahr im Schuljahr
+            </span>
+            <div class="underline w-13"></div> <div>/</div> <div class="underline h-100 w-13"></div>
+          </div>
+        </div>
+      </div>
 
-        <div class="underline w-100"></div>
+
+      <div class="container">
+          <div class="underline w-100"></div>
+
+          <div class="bold">Leistungen</div>
+          <div class="max-w-100 flex space-between">
+
+            <div class="w-45">
+              <div class="entry flex space-between min-w-100 max-w-100 border-box">
+                <span class="left">Deustch </span>
+                <div class="dots"></div>
+                <div class="right gray-block"></div>
+              </div>
+              <div class="entry flex border-box max-w-100">
+                <span class="left">Deustchasdfsdaddddddddddddddddddddddddd </span>
+                <div class="dots"></div>
+                <div class="right gray-block"></div>
+              </div>
+
+              <div class="w-100 child-container">
+                <div class="entry-child flex ">
+                  <span class="left">Sprechen und Zuhören </span>
+                  <div class="dots"></div>
+                  <div class="right gray-block"></div>
+                </div>
+                <div class="entry-child flex max-w-100">
+                  <span class="left">Schreiben ‒ Texte verfassen </span>
+                  <div class="dots"></div>
+                  <div class="right gray-block"></div>
+                </div>
+                <div class="entry-child flex max-w-100">
+                  <span class="left">Schreiben ‒ Rechtschreiben </span>
+                  <div class="dots"></div>
+                  <div class="right gray-block"></div>
+                </div>
+                <div class="entry-child flex max-w-100">
+                  <span class="left">Sprachwissen ‒ Sprachbewusstheit </span>
+                  <div class="dots"></div>
+                  <div class="right gray-block"></div>
+                </div>
+                <div class="entry-child flex max-w-100">
+                  <span class="left">Lesen ‒ Mit Texten und Medien umgehen </span>
+                  <div class="dots"></div>
+                  <div class="right gray-block"></div>
+                </div>
+              </div>
+
+              <div class="entry flex w-100">
+                <div class="left">Fremdsprache </div>
+                <div class="lines"></div>
+                <div class="right gray-block"></div>
+              </div>
+            </div>
+            <div class="w-45">
+                <div class="entry flex max-w-100">
+                  <span class="left">Mathematik </span>
+                  <div class="dots"></div>
+                  <div class="right gray-block"></div>
+                </div>
+                <div class="entry flex max-w-100">
+                  <span class="left">Sachunterricht </span>
+                  <div class="dots"></div>
+                  <div class="right gray-block"></div>
+                </div>
+                <div class="entry flex max-w-100">
+                  <span class="left">Kunst </span>
+                  <div class="dots"></div>
+                  <div class="right gray-block"></div>
+                </div>
+                <div class="entry flex max-w-100">
+                  <span class="left">Musik </span>
+                  <div class="dots"></div>
+                  <div class="right gray-block"></div>
+                </div>
+                <div class="entry flex max-w-100">
+                  <span class="left">Sport </span>
+                  <div class="dots"></div>
+                  <div class="right gray-block"></div>
+                </div>
+                <div class="entry flex w-100">
+                  <div class="left"> </div>
+                  <div class="lines"></div>
+                  <div class="right gray-block">--</div>
+                </div>
+                <div class="entry flex w-100">
+                  <div class="left"> </div>
+                  <div class="lines"></div>
+                  <div class="right gray-block">--</div>
+                </div>
+            </div>
+          </div>
+
+          <div class="underline w-100"></div>
+      </div>
+
+      <div class="container min-w-100">
+        <div class="bold min-w-100">Bemerkungen</div>
+        <div class="flex space-between">
+          <div class="w-50">
+            1. Das Arbeits- und Sozialverhalten wird beurteilt:
+          </div>
+          <div class="flex w-35">
+            <div class="flex center justify-center w-80">
+              <div class="gray-checkbox"></div>
+              <span>
+                ja, Anlage liegt bei
+              </span>
+            </div>
+            <div class="flex center justify-center w-20">
+              <div class="gray-checkbox "></div>
+              <span>
+                  nein
+              </span>
+            </div>
+          </div>
+        </div>
+          <!--
+        <div class="flex">
+          <div>
+            2. Das Beiblatt „Schul Z 620“ ist Bestandteil des Zeugnisses:
+          </div>
+        </div>
+  -->
+      </div>
     </div>
+
 		<div class="container">
 			<div class="flex space-between mb-50 boxes-container">
 				<div class="w-37 border box-container flex justify-evenly">
@@ -246,6 +285,19 @@
 					</div>
 				</div>
 			</div>
+        <div>
+          <div>
+            1) Beurteilung der Leistungen: 1 = sehr gut | 2 = gut | 3 = befriedigend | 4 = ausreichend | 5 = mangelhaft | 6 = ungenügend <br />
+            bf. = befreit, n. e. = nicht erteilt, o. B. = ohne Bewertung
+          </div>
+          <span class="p-0">
+
+            <span class="bold p-0">
+              Schul Z 104
+            </span>
+             – Zeugnis der Jahrgangsstufen 3 und 4 – (04.23)
+          </span>
+        </div>
 		</div>
 	</div>
 	
