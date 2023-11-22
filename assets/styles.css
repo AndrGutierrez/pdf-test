@@ -13,8 +13,8 @@
 	/* margin: 2.5cm 2.2cm 2.5cm 2.2cm; */
 	margin: 2.5cm 2.2cm 30px 2.2cm;
 	box-sizing: border-box;
-	max-height: 247mm;
-	min-height: 247mm;
+	max-height: 265mm;
+	min-height: 265mm;
 	max-width: 210mm;
 }
 .flex{
@@ -34,10 +34,9 @@
 }
 .underline{
 	border-bottom: black 0.5px solid;
-	margin-bottom: 2px;
 }
 .p-0{
-  padding: 0;
+  padding: 0 !important;
 }
 .w-10{
 	width:10%;
@@ -73,7 +72,7 @@
 	width:45%;
 }
 .w-47{
-	width:47%;
+	width:48%;
 }
 .w-49{
 	width:49%;
@@ -82,6 +81,9 @@
 	width:50%;
 }
 .w-55{
+	width:55%;
+}
+.w-57{
 	width:57%;
 }
 .w-60{
@@ -117,25 +119,25 @@
 	/* padding: 2mm; */
 }
 .header-container{
-	margin-top: 21px;
+	margin-top: 18px;
 	margin-left: -5px;
 }
 .space-between{
 	justify-content: space-between;
 }
 .border{
-	border: 1px solid black;
+	border: 0.7px solid black;
 }
 .gray-block{
-	min-width: 8mm;
-	height: 5mm;
-	background-color: lightgray;
+	min-width: 9mm;
+	height: 4.5mm;
+	background-color: #e0e0e0;
   text-align: center;
 }
 .gray-checkbox{
 	min-width: 3mm;
 	height: 3mm;
-	background-color: lightgray;
+	background-color: #e0e0e0;
   text-align: center;
 }
 body{
@@ -146,11 +148,11 @@ body{
 }
 html{
 	font-family: Berlin;
-	height: 247mm;
+	height: 265mm;
 }
 .super-container{
-	height: 247mm;
-	font-size: 12px;
+	height: 265mm;
+	font-size: 14px;
 	box-sizing: border-box;
 }
 span{
@@ -162,7 +164,7 @@ span{
 	margin-left: -15px;
 }
 h1{
-		font-size: 31px;
+		font-size: 32px;
 		margin: 20px 0 55px 60px;
 		/* font-weight: 500 !important; */
 		text-align: center;
@@ -172,7 +174,7 @@ h1{
 
 }
 .text-sm{
-		font-size: 9px;
+		font-size: 10px;
 
 }
 .name-group{
@@ -220,6 +222,11 @@ h1{
 .klasse{
 		width: 100px;
 }
+
+.ml-m20{
+  margin-left: -20px;
+}
+
 .im{
 		width: 225px;
 }
@@ -242,45 +249,50 @@ h1{
   box-sizing: border-box;
 }
 .entry-child{
-  padding: 0 8mm 0 0.8rem;
-  box-sizing: border-box;
+  padding: 0 3em 0 0.5rem;
+  font-size: 12.5px;
 }
 .entry, .entry-child{
   margin-bottom: 10px;
   justify-content: space-between;
+  box-sizing: border-box;
+  flex-grow: 1;
 }
+.entry{
+  /* padding-right: 2em; */
+
+}
+
+.left{
+  padding: 0;
+}
+
+.entry > div.gray-block, .entry-child > div.gray-block{
+  height: 6mm;
+  /* max-width: 11mm; */
+  width: 17mm;
+}
+
 .mt-gb{
   margin-top: 10px
-
 }
 
 
-.dots {
+.dots, .lines {
   height: 1rem; 
   overflow: hidden; 
   word-wrap: break-word;   
-  /* max-width: fit-content; */
-  /* letter-spacing: 5px; */
   min-width: 0px;
-  /* max-width:  */
 }
 
-.dots:after {
+.dots:after, .lines:after {
   content: '...............................................................................................................................................';
   display: block;
   min-width: 0px;
 }
 
-.lines {
-  height: 1rem; 
-  overflow: hidden; 
-  word-wrap: break-word; 
-}
-
 .lines:after {
   content: '-------------------------------------------------------------------------------------------------------------';
-  width: 100%;
-  display: block;
 }
 .border-box{
   box-sizing: border-box;
