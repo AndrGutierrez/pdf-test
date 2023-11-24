@@ -11,12 +11,12 @@
     <div class="">
       <div class="container mb-50">
         <div class="flex w-100 header-container">
-          <h1 class="w-100 bold">{{ document.document_title }}</h1>
+          <h1 class="w-100 bold"><!-- {{ document.document_title }} -->ZEUGNIS</h1>
           <img src="./assets/images/drawing.svg" class="logo">
         </div>
         <div class="name-group w-100">
           <div class="flex justify-center w-100">
-            <div class="underline w-57 text-center">{{ pupil.first_name }} {{ pupil.last_name }}</div>
+            <div class="underline w-57 text-center"><!-- {{ pupil.first_name }} {{ pupil.last_name }} --></div>
           </div>
           <div class="flex justify-center w-100">
             <div class="text-sm text-center w-60">Vorname/n &nbsp; Name</div>
@@ -27,21 +27,21 @@
             <span>
               geboren am 
             </span>
-              <div class="underline w-100 h-100">{{ pupil.birthday|date:"d.m.Y" }}</div>
+              <div class="underline w-100 h-100"><!-- {{ pupil.birthday|date:"d.m.Y" }} --></div>
           </div>
           <div class="flex min-content klasse ml-m20">
             <span>
               Klasse 
             </span>
-            <div class="underline h-100 w-70">{{ pupil.group.name_short }}</div>
+            <div class="underline h-100 w-70"><!-- {{ pupil.group.name_short }} --></div>
           </div>
           <div class="flex im min-content">
-            <div class="w-10 underline h-100">{% if document.document_type.key == 'notenzeugnis-halbjahr-2023' %}1.{% else %}1. und. 2.{% endif %}</div>
+            <div class="w-10 underline h-100"><!-- {% if document.document_type.key == 'notenzeugnis-halbjahr-2023' %}1.{% else %}1. und. 2.{% endif %} --></div>
 
             <span>
               Halbjahr im Schuljahr
             </span>
-            <div class="underline w-13"></div>{{ document.document_year }}<div>/</div> <div class="underline h-100 w-13"></div>
+            <div class="underline w-13"></div><!-- {{ document.document_year }} --><div>/</div> <div class="underline h-100 w-13"></div>
           </div>
         </div>
       </div>
@@ -59,7 +59,7 @@
                     <span class="left p-0">Deustch </span>
                     <div class="dots"></div>
                   </div>
-                  <div class="gray-block">{% for report in reports.export_sections.noten %}{% if "Deutsch" in report.course.name %}{% for textblock in report.textblocks.all %}{{ textblock.text }}{% endfor %}{% endif %}{% endfor %}</div>
+                  <div class="gray-block"><!-- {% for report in reports.export_sections.noten %}{% if "Deutsch" in report.course.name %}{% for textblock in report.textblocks.all %}{{ textblock.text }}{% endfor %}{% endif %}{% endfor %} --></div>
 
                 </div>
 
@@ -106,7 +106,7 @@
                   <span class="left p-0">Fremdsprache: Englisch </span>
                   <div class="lines"></div>
                 </div>
-                <div class="gray-block">{% for report in reports.export_sections.noten %}{% if "Englisch" in report.course.name %}{% for textblock in report.textblocks.all %}{{ textblock.text }}{% endfor %}{% endif %}{% endfor %}</div>
+                <div class="gray-block lines_gray-block"><!-- {% for report in reports.export_sections.noten %}{% if "Englisch" in report.course.name %}{% for textblock in report.textblocks.all %}{{ textblock.text }}{% endfor %}{% endif %}{% endfor %} --></div>
 
               </div>
 
@@ -152,14 +152,14 @@
                   <span class="left p-0"></span>
                   <div class="lines"></div>
                 </div>
-                <div class="gray-block">--</div>
+                <div class="gray-block lines_gray-block">--</div>
               </div>
               <div class="flex entry">
                 <div class="flex max-w-100 border-box">
                   <span class="left p-0"></span>
                   <div class="lines"></div>
                 </div>
-                <div class="gray-block">--</div>
+                <div class="gray-block lines_gray-block">--</div>
               </div>
             </div>
           </div>

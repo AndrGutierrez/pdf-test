@@ -310,3 +310,6 @@ h1{
   overflow: hidden;
 }
 
+.lines_gray-block{
+  margin-left: -5px;
+}
