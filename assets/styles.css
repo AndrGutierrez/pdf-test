@@ -5,7 +5,6 @@
 
 @font-face {
     font-family: 'BerlinBold'; /*a name to be used later*/
-    src: url('./fonts/Wir.Berlin Schrift/Office (TTF)/BerlinTypeOffice-Regular.ttf'); /*URL to font*/
     src: url('./fonts/Wir.Berlin Schrift/Office (TTF)/BerlinTypeOffice-Bold.ttf'); /*URL to font*/
 }
 @page {
@@ -34,6 +33,7 @@
 }
 .underline{
 	border-bottom: black 0.5px solid;
+  text-align: center;
 }
 .p-0{
   padding: 0 !important;
