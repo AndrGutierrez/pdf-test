@@ -16,7 +16,7 @@
         </div>
         <div class="name-group w-100">
           <div class="flex justify-center w-100">
-            <div class="underline w-57"></div>
+            <div class="underline w-57 text-center"></div>
           </div>
           <div class="flex justify-center w-100">
             <div class="text-sm text-center w-60">Vorname/n &nbsp; Name</div>
@@ -25,9 +25,9 @@
         <div class="w-100 flex space-between date-group">
           <div class="flex geboren">
             <span>
-              geboren am
+              geboren am 
             </span>
-             <div class="underline w-100 h-100">{{ pupil.birthday|date:"d.m.Y" }}</div>
+              <div class="underline w-100 h-100"> <!-- {{ pupil.birthday|date:"d.m.Y" }} --></div>
           </div>
           <div class="flex min-content klasse ml-m20">
             <span>
@@ -46,11 +46,11 @@
       </div>
 
 
-      <div class="container border-box">
-          <div class="underline w-100"></div>
+      <div class="container border-box ">
+          <div class="underline w-100 mb-10"></div>
 
-          <div class="bold">Leistungen</div>
-          <div class="max-w-100 flex space-between">
+          <div class="bold">Leistungen <sup class="text-xs bold">1)</sup></div>
+          <div class="max-w-100 flex space-between mb-20">
 
             <div class="w-50 border-box">
                 <div class="flex entry">
@@ -161,12 +161,12 @@
             </div>
           </div>
 
-          <div class="underline w-100"></div>
+          <div class="underline w-100 mb-10"></div>
       </div>
 
       <div class="container min-w-100">
-        <div class="bold min-w-100">Bemerkungen</div>
-        <div class="flex space-between">
+        <div class="bold min-w-100">Bemerkungen  </div>
+        <div class="flex space-between mb-10">
           <div class="w-57">
             1. Das Arbeits- und Sozialverhalten wird beurteilt:
           </div>
