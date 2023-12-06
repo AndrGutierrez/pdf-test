@@ -289,9 +289,9 @@ h1{
 
 .entry > div.gray-block, .entry-child > div.gray-block{
   height: 6mm;
-  /* max-width: 11mm; */
-  width: 17mm;
-  z-index: 1;
+  flex: none;
+  width: 9mm;
+  margin-left: 1mm;
 }
 
 .entry > div > div, .entry-child > div > div{
@@ -331,11 +331,8 @@ h1{
   overflow: hidden;
 }
 
-.lines_gray-block{
-  margin-left: -7px;
-
-}
-.b-white{
-  background-color: white;
-  z-index: 100
-}
+/* .lines_gray-block{ */
+/*   z-index: 100; */
+/*   flex: none; */
+/**/
+/* } */
