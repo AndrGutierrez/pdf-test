@@ -134,6 +134,10 @@
 	background-color: #e0e0e0;
   text-align: center;
 }
+.gray-block.text-sm {
+    line-height: 4.5mm;
+
+}
 .gray-checkbox{
 	min-width: 3mm;
 	height: 3mm;
@@ -174,7 +178,7 @@ span{
 h1{
 		font-size: 32px;
 		margin: 20px 0 55px 0;
-    padding: 0 4rem 0 8.4rem;
+    padding: 0 4rem 0 7.3rem;
 		/* font-weight: 500 !important; */
 		text-align: center;
 }
@@ -249,7 +253,7 @@ h1{
 }
 
 .im{
-		width: 190px;
+		width: 240px;
 }
 .full-under{
 	height: 18px;
@@ -292,6 +296,7 @@ h1{
   flex: none;
   width: 9mm;
   margin-left: 1mm;
+  line-height: 6mm;
 }
 
 .entry > div > div, .entry-child > div > div{
@@ -336,3 +341,6 @@ h1{
 /*   flex: none; */
 /**/
 /* } */
+.nowrap{
+  white-space: nowrap;
+}

@@ -33,19 +33,19 @@
                 </span>
                   <div class="underline w-100 h-100"> <!-- {{ pupil.birthday|date:"d.m.Y" }} --> </div>
               </div>
-              <div class="flex min-content klasse ml-m20">
+              <div class="flex min-content klasse ">
                 <span>
                   Klasse 
                 </span>
                 <div class="underline h-100 w-70"> <!-- {{ pupil.group.name_short }} --> </div>
               </div>
               <div class="flex im min-content">
-                <div class="w-10 underline h-100"> <!-- {% if document.document_type.key == 'notenzeugnis-halbjahr-2023' %}1.{% else %}1. und. 2.{% endif %} --> </div>
+                <div class="w-5 underline h-100"> 1. <!-- {% if document.document_type.key == 'notenzeugnis-halbjahr-2023' %}1.{% else %}1. und. 2.{% endif %} --> </div>
 
                 <span>
                   Halbjahr im Schuljahr
                 </span>
-                <div class="underline w-13"><!-- {{ document.document_year }} --></div>
+                <div class="underline w-13 nowrap"><!-- {{ document.document_year }} --> 2023 / 2024</div>
               </div>
             </div>
           </div>
@@ -63,7 +63,7 @@
                         <div class="left p-0">Deustch </div>
                         <div class="dots"></div>
                       </div>
-                      <div class="gray-block"> <!-- {% for report in reports.export_sections.noten %}{% if "Deutsch" in report.course.name %}{% for textblock in report.textblocks.all %}{{ textblock.text }}{% endfor %}{% endif %}{% endfor %}  --></div>
+                      <div class="gray-block">1 <!-- {% for report in reports.export_sections.noten %}{% if "Deutsch" in report.course.name %}{% for textblock in report.textblocks.all %}{{ textblock.text }}{% endfor %}{% endif %}{% endfor %}  --></div>
 
                     </div>
 
@@ -87,7 +87,7 @@
                         <div class="left">Schreiben ‒ Rechtschreiben </div>
                         <div class="dots"></div>
                       </div>
-                      <div class="gray-block">--</div>
+                      <div class="gray-block">2</div>
                     </div>
                     <div class="flex entry-child ">
                       <div class="flex max-w-100 border-box">
@@ -224,7 +224,7 @@
                   </div>
                 </div>
                 <div class="w-100 flex justify-center">
-                  <div class="gray-block"><!-- {% for report in reports.export_sections.additional %}{% if report.course.course_category.name == 'Fehlzeiten' %}{{ report.absence_days}}{% endif %}{% endfor %} --></div>
+                  <div class="gray-block text-sm">0<!-- {% for report in reports.export_sections.additional %}{% if report.course.course_category.name == 'Fehlzeiten' %}{{ report.absence_days}}{% endif %}{% endfor %} --></div>
                 </div>
               </div>
               <div class="w-49">
@@ -234,7 +234,7 @@
                   </div>
                 </div>
                 <div class="w-100 flex justify-center">
-                  <div class="gray-block"><!-- {% for report in reports.export_sections.additional %}{% if report.course.course_category.name == 'Fehlzeiten' %}{{report.absence_days_unexcused}}{% endif %}{% endfor %} --></div>
+                  <div class="gray-block text-sm">0<!-- {% for report in reports.export_sections.additional %}{% if report.course.course_category.name == 'Fehlzeiten' %}{{report.absence_days_unexcused}}{% endif %}{% endfor %} --></div>
                 </div>
               </div>
             </div>
@@ -244,7 +244,7 @@
                   <div class="text-sm"> versäumte Einzelstsunden </div>
                 </div>
                 <div class="w-100 flex justify-center">
-                  <div class="gray-block"><!-- {% for report in reports.export_sections.additional %}{% if report.course.course_category.name == 'Fehlzeiten' %}{{report.absence_hours}}{% endif %}{% endfor %} --></div>
+                  <div class="gray-block text-sm">0<!-- {% for report in reports.export_sections.additional %}{% if report.course.course_category.name == 'Fehlzeiten' %}{{report.absence_hours}}{% endif %}{% endfor %} --></div>
                 </div>
               </div>
               <div class="w-50">
@@ -254,7 +254,7 @@
                   </div>
                 </div>
                 <div class="w-100 flex justify-center">
-                  <div class="gray-block"><!-- {% for report in reports.export_sections.additional %}{% if report.course.course_category.name == 'Fehlzeiten' %}{{report.absence_hours_unexcused}}{% endif %}{% endfor %} --></div>
+                  <div class="gray-block text-sm">0<!-- {% for report in reports.export_sections.additional %}{% if report.course.course_category.name == 'Fehlzeiten' %}{{report.absence_hours_unexcused}}{% endif %}{% endfor %} --></div>
                 </div>
               </div>
             </div>
@@ -264,7 +264,7 @@
                   Verspätungen
                 </div>
                 <div class="w-100 flex justify-center">
-                  <div class="gray-block"><!-- {% for report in reports.export_sections.additional %}{% if report.course.course_category.name == 'Fehlzeiten' %}{{report.absence_hours_delayed}}{% endif %}{% endfor %} --></div>
+                  <div class="gray-block text-sm">0<!-- {% for report in reports.export_sections.additional %}{% if report.course.course_category.name == 'Fehlzeiten' %}{{report.absence_hours_delayed}}{% endif %}{% endfor %} --></div>
                 </div>
               </div>
             </div>
